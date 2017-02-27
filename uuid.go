@@ -157,6 +157,8 @@ func NewV4() *UUID {
 	// }
 	copy(u[0:], r)
 	setVersion(&u, 4)
+	//Set the two most significant bits (bits 6 and 7) of the
+	//clock_seq_hi_and_reserved to zero and one, respectively.
 	setVariant(&u)
 	return &u
 }
