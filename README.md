@@ -13,14 +13,16 @@ Features :
 
 ## Installation
 
-`go get github.com/retiredbatman/gouuid`
+`go get github.com/com-redbus/gouuid`
 
 ## Example
 ```go
-u1 := NewV1()
+import "github.com/com-redbus/gouuid"
+
+u1 := gouuid.NewV1()
 fmt.Printf("UUIDv1: %s\n", u1.Format())
 
-u4 := NewV4()
+u4 := gouuid.NewV4()
 fmt.Printf("UUIDv4: %s\n", u4.Format())
 ```
 
